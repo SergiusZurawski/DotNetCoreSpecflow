@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NUnit.Framework;
+using System;
 using TechTalk.SpecFlow;
 
 namespace DotNetCoreSpecflow.Steps
@@ -21,7 +22,7 @@ namespace DotNetCoreSpecflow.Steps
         [When(@"I press add")]
         public void WhenIPressAdd()
         {
-            throw new Exception();
+            TestContext.Out.Write("::::::::::::::::::::::::::::::::::::::::::::::::::::::1231231");
         }
         
         [Then(@"the result should be (.*) on the screen")]
